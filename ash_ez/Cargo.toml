@@ -1,0 +1,15 @@
+[package]
+name = "ash_ez"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+fastrand = "1.5"
+winit = "0.25"
+
+[dependencies]
+ash = "0.36"
+ash-window = "0.9"
+raw-window-handle = "0.3"
