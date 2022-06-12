@@ -128,9 +128,11 @@ impl GUI {
                 }
 
                 ui.separator();
-
-                ui.text("update_time = ".to_string() + &(world.benchmark_update * 1_000.0).to_string() + "ms");
-                ui.text("draw_time   = ".to_string() + &(world.benchmark_draw * 1_000.0).to_string() + "ms");
+                if ui.collapsing_header("benchmark", imgui::TreeNodeFlags::DEFAULT_OPEN) {
+                    ui.text("update_time = ".to_string() + &(world.benchmark_update * 1_000.0).to_string() + "ms");
+                    ui.text("draw_time   = ".to_string() + &(world.benchmark_draw * 1_000.0).to_string() + "ms");
+                }
+                ui.separator();
 
                 ui.text("num_threads = ".to_string() + &world.threadpool.num_threads().to_string()); ui.same_line();
                 if ui.button("+1") { world.threadpool.new_thread(); } ui.same_line();

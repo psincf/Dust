@@ -24,6 +24,7 @@ fn main() {
     let event_loop = winit::event_loop::EventLoop::new();
 
     let window = winit::window::WindowBuilder::new()
+        .with_title("Dust")
         .with_inner_size(winit::dpi::PhysicalSize::new(SIZE_X, SIZE_Y))
         .build(&event_loop)
         .unwrap();
