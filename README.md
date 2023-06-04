@@ -2,8 +2,7 @@
 
 2d multithreaded particles simulation.
 
-![Dust](https://github.com/psincf/Dust/assets/44228825/233bc199-d75f-4fbd-9da2-1c0e01ef892d)
-
+![Dust](https://github.com/psincf/Dust/assets/44228825/4274d1f1-8c26-4ec9-b840-34d9b2137f7a)
 
 ## How to run
 
